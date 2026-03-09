@@ -1,5 +1,5 @@
 class Main {
-    static void main() {
+    public static void main(String[] args) {
         Product product = new Product("milk", 15.5);
         SupportTicket supportTicket = new SupportTicket("12893", "issue");
 
@@ -7,8 +7,7 @@ class Main {
         recordStorage.addRecord(product);
         recordStorage.addRecord(supportTicket);
 
-        StorageUtils storageUtils = new StorageUtils();
-        storageUtils.printAllIds(recordStorage);
+        StorageUtils.printAllIds(recordStorage);
 
         System.out.println(recordStorage.getRecordById("milk"));
 

@@ -1,8 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
 
-import static java.lang.classfile.Attributes.record;
-
 public class RecordStorage<T extends BaseRecord> {
     private final List<T> list = new ArrayList<>();
 
@@ -14,7 +12,7 @@ public class RecordStorage<T extends BaseRecord> {
         if (id == null) return null;
 
         for (T record : list) {
-            if (record.id.equals(id)) {
+            if (record.getId().equals(id)) {
                 return record;
             }
         }

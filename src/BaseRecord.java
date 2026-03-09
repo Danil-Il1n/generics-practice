@@ -1,7 +1,10 @@
 public abstract class BaseRecord {
-    String id;
+    private String id;
 
-    public <T> BaseRecord(String id) {
+    public BaseRecord(String id) {
         this.id = id;
+    }
+    public String getId() {
+        return id;
     }
 }
